@@ -1,0 +1,159 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+fieldset {
+  border: none;
+}
+
+.row {
+  display: flex;
+}
+
+.just-center {
+  justify-content: center;
+}
+
+.panel {
+  width: 350px;
+  margin-top: 50px;
+  box-shadow: 0 0 2px 2px #dfdfdf;
+  border-radius: 6px;
+}
+
+.topbar {
+  text-align: center;
+}
+
+.topbar h2 {
+  margin: 0;
+  padding: 15px 0;
+  color: #146b7d;
+}
+
+.navbar__item {
+  width: 50%;
+  text-align: center;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.navbar--email {
+  background-color: #bff1fb;
+}
+
+.navbar--email span {
+  color: #146b7d;
+}
+
+.navbar--phone {
+  background-color: #146b7d;
+}
+
+.navbar--phone span {
+  color: #bff1fb;
+}
+
+.tab {
+  background-color: #bff1fb;
+  border-radius: 0 0 6px 6px;
+  text-align: center;
+}
+
+.regform label {
+  color: #aaaaaa;
+  font-size: 14px;
+}
+
+.regform fieldset {
+  padding: 30px;
+}
+
+.regform input,
+.regform select {
+  border-radius: 4px;
+  font: 14px;
+  font-family: "Roboto", sans-serif;
+}
+
+.regform input[type="email"],
+.regform input[type="tel"],
+.regform select {
+  height: 28px;
+  padding: 0;
+  padding-left: 8px;
+  border: solid 1px #fff;
+}
+
+.regform select {
+  cursor: pointer;
+}
+
+.regform select:hover,
+.regform select:active,
+.regform input[type="email"]:focus,
+.regform input[type="tel"]:focus,
+.regform select:focus {
+  outline: 0;
+  border: solid 1px #000;
+}
+
+.fieldrow {
+  margin-bottom: 15px;
+}
+
+.fieldrow--checkboxes {
+  margin-top: 30px;
+}
+
+.fieldrow__inputs {
+  justify-content: space-between;
+}
+
+.fieldrow__inputs input {
+  width: 60%;
+}
+
+.fieldrow__inputs select {
+  width: 30%;
+}
+
+.fieldrow__check label,
+.fieldrow__check input {
+  cursor: pointer;
+}
+
+.fieldrow__check label {
+  font-size: 12px;
+}
+
+.error {
+  margin: 8px 0;
+}
+
+.error label {
+  color: #eb0707;
+}
+
+.btn {
+  margin-top: 5px;
+  border: none;
+  width: 50%;
+  padding: 8px;
+  color: #368696;
+  border: solid 2px #ffffff;
+  background-color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #368696;
+  color: white;
+}
+
+.loader {
+  padding: 50px 0;
+  background: url("loading.gif") no-repeat center;
+  background-size: 30px 30px;
+}

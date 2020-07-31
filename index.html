@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test - registration form</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="row just-center">
+      <div class="panel">
+        <div class="topbar">
+          <h2>Register with:</h2>
+        </div>
+        <nav class="row navbar">
+          <div class="navbar__item navbar--email" id="emailTab">
+            <span>Email</span>
+          </div>
+          <div class="navbar__item navbar--phone" id="phoneTab">
+            <span>Phone</span>
+          </div>
+        </nav>
+        <div class="tab">
+          <form
+            class="regform"
+            id="formPanel"
+            action=""
+            method="post"
+            novalidate
+          >
+            <fieldset>
+              <div class="fieldrow">
+                <div class="row fieldrow__inputs">
+                  <input
+                    id="regMethod"
+                    type="email"
+                    placeholder="Email"
+                    name="email"
+                  />
+                  <select id="currency" name="currency">
+                    <option selected="selected" disabled>- cur -</option>
+                    <option>EUR</option>
+                    <option>USD</option>
+                  </select>
+                </div>
+              </div>
+              <div class="fieldrow fieldrow--checkboxes">
+                <div class="fieldrow__check">
+                  <input type="checkbox" id="terms" name="terms" />
+                  <label for="terms">Do you accept terms and conditions?</label>
+                </div>
+                <div class="fieldrow__check">
+                  <input type="checkbox" id="promo" name="promos" />
+                  <label for="promo">Allow us to send promos?</label>
+                </div>
+              </div>
+              <div class="error">
+                <label id="error"></label>
+              </div>
+              <div class="row just-center">
+                <input
+                  class="btn"
+                  id="regBtn"
+                  type="submit"
+                  placeholder="REGISTER"
+                />
+              </div>
+            </fieldset>
+          </form>
+          <div id="loading" class="row just-center"></div>
+        </div>
+      </div>
+    </main>
+    <script type="text/javascript" src="js.js"></script>
+  </body>
+</html>
